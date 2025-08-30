@@ -3,63 +3,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ewan James Knight</title>
-    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+            background: url('assets/images/homepage.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        section {
+            position: absolute;
+            bottom: 40px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Ewan James Knight</h1>
         <nav>
-            <a href="#about">About</a>
-            <a href="#music">Music</a>
-            <a href="live/index.html">Live</a>
-            <a href="gallery/index.html">Gallery</a>
-            <a href="#contact">Contact</a>
+            <a href="bio.html">Bio</a>
+            <a href="cv.html">CV</a>
+            <a href="works/things-fall-between.html">Works</a>
+            <a href="session.html">Session Work</a>
+            <a href="tuition.html">Tuition</a>
         </nav>
     </header>
-
-    <section id="hero">
-        <img src="gallery/performance_collab.jpg" alt="Ewan and collaborator at a live performance">
-    </section>
-
-    <section id="about">
-        <h2>About</h2>
-        <p>
-            <strong>Ewan Knight</strong> is a musician, producer, and educator based in Sheffield, specialising in immersive sound design and richly textured composition. 
-            His recent work includes composing original soundtracks for independent games and launching his solo electronic project <strong>brainjjus</strong>, 
-            which blends bio-music techniques, acoustic instrumentation, and digital processing to craft atmospheric and emotionally resonant soundscapes.
-        </p>
-        <p>
-            His debut immersive piece, <em>Things Fall Between</em>, premiered in June 2025 and will be released as a full-length album later this year. 
-            He is also preparing the release of his debut EP, <em>you might never be in the same room you are listening to this again</em>, set for release in late 2025.
-        </p>
-        <p>
-            Ewan is one half of the collaborative duo <strong>individual Hotpot</strong> with Nam Joo Huh. Their experimental performance piece, <em>Gut Feelings</em>, explores themes 
-            of bodily tension, sonic discomfort, and involuntary expression through improvisation, ambient electronics, and manipulated vocal textures. 
-            The duo has presented the work in both academic and performance contexts.
-        </p>
-        <p>
-            In addition to his creative work, Ewan is available as a <strong>session musician</strong> and offers <strong>music tuition</strong> in guitar, piano, and music theory 
-            to learners of all ages and levels.
-        </p>
-    </section>
-
-    <section id="music">
-        <h2>Music</h2>
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus&color=%23121212&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+    <section>
+        <iframe width="60%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/walking-through-a-forest-in-the-alps-and-sitting-by-a-mountain-stream&color=%23ffffff&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
         </iframe>
     </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:ewan0knight@live.co.uk">ewan0knight@live.co.uk</a></p>
-        <p>Instagram: <a href="https://instagram.com/brainjjus">@brainjjus</a></p>
-    </section>
-
-    <footer>
-        <p>© 2025 Ewan James Knight</p>
-    </footer>
 </body>
 </html>
