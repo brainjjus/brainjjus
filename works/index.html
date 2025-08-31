@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Works – Ewan James Knight</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 40px;
+            background-color: #fefefe;
+            color: #111;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+        .works-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .work-tile {
+            background-color: #dcdcdc;
+            height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #aaa;
+        }
+        .work-tile:hover {
+            background-color: #bbb;
+        }
+    </style>
+</head>
+<body>
+    <h1>Works</h1>
+    <div class="works-grid">
+        <a class="work-tile" href="gut-feelings.html">Gut Feelings</a>
+        <a class="work-tile" href="things-fall-between.html">Things Fall Between</a>
+        <a class="work-tile" href="spotify.html">Spotify</a>
+        <a class="work-tile" href="soundcloud.html">SoundCloud</a>
+    </div>
+</body>
+</html>
