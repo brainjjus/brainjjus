@@ -2,34 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cv</title>
-  <link rel="stylesheet" href="/style.css">
+  <title>Ewan James Knight</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-  <h1><a href="/index.html">Ewan James Knight</a></h1>
-  <nav>
-    <ul>
-      <li><a href="/bio.html">Bio</a></li>
-      <li><a href="/cv.html">CV</a></li>
-      <li><a href="/session.html">Session Work</a></li>
-      <li><a href="/tuition.html">Tuition</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-      <li>
-        <a href="#">Works ▾</a>
-        <ul>
-          <li><a href="/works/gut-feelings.html">Gut Feelings</a></li>
-          <li><a href="/works/things-fall-between.html">Things Fall Between</a></li>
-          <li><a href="/works/spotify.html">Spotify</a></li>
-          <li><a href="/works/soundcloud.html">SoundCloud</a></li>
-        </ul>
-      </li>
-    </ul>
-  </nav>
-</header>
+  <div class="container">
+    <div class="sidebar">
+  <div class="brand"><a href="index.html">ewan james knight</a></div>
+  <ul class="nav">
+    <li><a href="bio.html">bio</a></li>
+    <li><a href="cv.html">cv</a></li>
+    <li><a href="session.html">session work</a></li>
+    <li><a href="tuition.html">tuition</a></li>
+    <li><a href="contact.html">contact</a></li>
+    <li class="has-submenu"><a href="#">works</a>
+      <ul class="submenu">
+        <li><a href="works/gut-feelings.html">gut feelings</a></li>
+        <li><a href="works/things-fall-between.html">things fall between</a></li>
+        <li><a href="works/spotify.html">spotify</a></li>
+        <li><a href="works/soundcloud.html">soundcloud</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
 
-  <main>
-  <div class="sidebar">
+    <main>
+      <div class="sidebar">
         <a href="/index.html">Home</a>
         <a href="/bio.html">Bio</a>
         <a href="/cv.html">CV</a>
@@ -109,6 +107,7 @@
             submenu.style.display = submenu.style.display === "block" ? "none" : "block";
         }
     </script>
-  </main>
+    </main>
+  </div>
 </body>
 </html>
