@@ -1,36 +1,17 @@
 
 body {
-    display: flex;
-    margin: 0;
     font-family: 'Times New Roman', Times, serif;
-}
-.sidebar {
-    width: 220px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
-}
-.sidebar h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-}
-.sidebar ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-.sidebar ul li {
-    margin-bottom: 10px;
-}
-.sidebar ul li a {
-    text-decoration: none;
+    margin: 40px;
+    background-color: #fefefe;
     color: #111;
 }
-.sidebar ul li a:hover {
-    text-decoration: underline;
+h1 {
+    font-size: 2em;
 }
-.main-content {
-    margin-left: 240px;
-    padding: 40px;
-    flex: 1;
+p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+a {
+    color: #000;
 }
