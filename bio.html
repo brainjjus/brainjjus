@@ -1,69 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bio - Ewan James Knight</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bio | Ewan James Knight</title>
+    
     <style>
         body {
-            margin: 0;
             font-family: "Times New Roman", serif;
-            background-color: #121212;
+            background-color: #111;
             color: #f0f0f0;
-        }
-        .container {
+            margin: 0;
+            padding: 0;
             display: flex;
-            flex-direction: row;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #000;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            padding-left: 10px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+        .bio-wrapper {
+            margin-left: 220px;
+            padding: 40px;
+            display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
-            justify-content: center;
-            padding: 2rem;
+            justify-content: space-between;
+        }
+        .bio-text {
+            flex: 1;
+            padding-right: 20px;
+            max-width: 55%;
         }
         .bio-image {
             flex: 1;
-            max-width: 400px;
-            margin: 1rem;
+            max-width: 40%;
         }
         .bio-image img {
             width: 100%;
             height: auto;
-            border-radius: 5px;
-        }
-        .bio-text {
-            flex: 2;
-            min-width: 300px;
-            margin: 1rem;
-            line-height: 1.6;
-        }
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-                align-items: center;
-            }
+            border-radius: 8px;
         }
     </style>
+
 </head>
 <body>
-    <div class="container">
-        <div class="bio-image">
-            <img src="bio_image.jpg" alt="Ewan James Knight performing live">
+    
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="cv.html">CV</a>
+        <div class="dropdown">
+            <a href="#">Works +</a>
+            <div class="dropdown-content">
+                <a href="works/gut-feelings.html">Gut Feelings</a>
+                <a href="works/things-fall-between.html">Things Fall Between</a>
+                <a href="https://open.spotify.com/artist/6gXUsj05uNhFBePL3R5CPS">Spotify</a>
+                <a href="https://soundcloud.com/brainjjus">SoundCloud</a>
+            </div>
         </div>
-        <div class="bio-image">
-            <h1>About</h1>
-            <p>Ewan Knight is a UK-based musician, composer, and sound designer whose work spans ambient music, experimental performance, and collaborative sound art. Working under the artist name brainjjus, he creates emotionally resonant solo ambient works that explore inner landscapes, psychological states, and the act of listening. His debut EP <em>you might never be in the same room you are listening to this again</em> is due for release in late 2025.</p>
-
-            <p>In 2025, he premiered <em>Things Fall Between</em>, a solo performance and forthcoming album structured in six movements. Performed live with synthesizers, guitar, and effects in an immersive setup, the work examines the metaphor of falling off a cliff as a psychological rupture. Drawing from influences such as Arvo Pärt, Hiroshi Yoshimura, and Patricia Wolf, it represents a culmination of Ewan’s compositional, performance, and technical craft.</p>
-
-            <p>Ewan is one half of <em>Individual Hotpot</em>, a collaborative duo with Korean artist Nam Joo Huh. Together, they developed <em>Gut Feelings</em>, a semi-improvised performance lecture on sonic shame and involuntary bodily sound. The piece has been presented in galleries and experimental spaces across the UK and Europe and is currently evolving into a large-scale immersive exhibition combining field recordings, live electronics, spoken word, and participatory elements.</p>
-
-            <p>Alongside his creative work, Ewan is an experienced session and dep musician, having performed with artists including Selina Lee and Mat Hook. His work as a live instrumentalist has taken him across the UK and internationally, contributing to projects across genres and settings.</p>
-
-            <p>He was recently selected for the Earthsonic Futures programme, supporting emerging artists working with sound and environmental activism.</p>
-
-            <p>Ewan is a classically trained guitarist and multi-instrumentalist. He is also a dedicated educator, teaching through Sheffield Music Hub, Sheffield Inclusion Centre, and privately. He focuses on inclusive approaches to performance, composition, and music technology.</p>
-        </div>
+        <a href="session.html">Session Work</a>
+        <a href="tuition.html">Tuition</a>
+        <a href="contact.html">Contact</a>
     </div>
+
+    
+<div class="bio-wrapper">
+    <div class="bio-text">
+        <p>
+            Ewan Knight is a UK-based musician, composer, and sound designer whose work spans ambient music, experimental performance, and collaborative sound art. Working under the artist name brainjjus, he creates emotionally resonant solo ambient works that explore inner landscapes, psychological states, and the act of listening. His debut EP <i>you might never be in the same room you are listening to this again</i> is due for release in late 2025.
+        </p>
+        <p>
+            Ewan’s practice includes composing for interactive media. He designed the music and sound for the experimental narrative game <i>I Dancem Refusant</i>, a surreal, hybrid experience exploring embodiment and digital resistance. He returned as composer for the game’s sequel, continuing to develop an immersive, affective sound world that blends ambient composition, granular textures, and reactive sound design.
+        </p>
+        <p>
+            In 2025, he premiered <i>Things Fall Between</i>, a solo performance and forthcoming album structured in six movements. Performed live with synthesizers, guitar, and effects in an immersive setup, the work examines the metaphor of falling off a cliff as a psychological rupture. Drawing from influences such as Arvo Pärt, Hiroshi Yoshimura, and Patricia Wolf, it represents a culmination of Ewan’s compositional, performance, and technical craft.
+        </p>
+        <p>
+            Ewan is one half of individual Hotpot, a collaborative duo with Korean artist Nam Joo Hoo. Together, they developed <i>Gut Feelings</i>, a semi-improvised performance lecture on sonic shame and involuntary bodily sound. The piece has been presented in galleries and experimental spaces across the UK and Europe and is currently evolving into a large-scale immersive exhibition.
+        </p>
+        <p>
+            Alongside his creative work, Ewan is a classically trained guitarist and multi-instrumentalist. He is an experienced session and dep musician, having performed with artists including Selina Lee and Mat Hook. He is also a dedicated educator, teaching through Sheffield Music Hub, Sheffield Inclusion Centre, and privately. His work spans live event production, video game sound design, and inclusive music education.
+        </p>
+    </div>
+    <div class="bio-image">
+        <img src="bio_image.jpg" alt="Ewan performing live">
+    </div>
+</div>
+
 </body>
 </html>
