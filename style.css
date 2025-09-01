@@ -1,78 +1,36 @@
-/* Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; }
 
-html, body { height: 100%; }
 body {
-  font-family: Georgia, "Times New Roman", serif;
-  background-color: #f6f6f4; /* off-white */
-  color: #333;
-  line-height: 1.8;
-  font-size: 20px;
+    display: flex;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
-
-/* Links */
-a { color: #505050; text-decoration: none; transition: color .15s ease; }
-a:hover { color: #222; }
-a:focus { outline: 1px dashed #999; outline-offset: 2px; }
-
-.container { display: flex; min-height: 100vh; }
-
-/* Sidebar */
 .sidebar {
-  width: 220px;
-  padding: 24px 18px;
-  position: sticky;
-  top: 0;
-  align-self: flex-start;
-  height: 100vh;
-  border-right: 1px solid #e3e3df;
-  background: transparent;
+    width: 220px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
 }
-
-.brand {
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: lowercase;
-  font-size: 20px;
-  margin-bottom: 16px;
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
-
-.nav {
-  list-style: none;
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: lowercase;
-  color: #8a8a8a;
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
 }
-
-.nav li { margin: 8px 0; }
-.nav a { color: #8a8a8a; }
-.nav a:hover { color: #5a5a5a; }
-
-.nav .submenu {
-  display: none;
-  margin-left: 12px;
-  border-left: 1px solid #e3e3df;
-  padding-left: 10px;
+.sidebar ul li {
+    margin-bottom: 10px;
 }
-.nav .has-submenu:hover .submenu { display: block; }
-
-/* Content */
-main.content {
-  flex: 1;
-  padding: 40px 40px 64px;
-  max-width: 1100px;
-  margin: 0 auto;
+.sidebar ul li a {
+    text-decoration: none;
+    color: #111;
 }
-main.content h1 { font-size: 34px; margin: 8px 0 16px; font-weight: 700; color:#2a2a2a; }
-main.content h2 { font-size: 24px; margin: 24px 0 12px; color:#2f2f2f; }
-p, li { color: #474747; }
-ul { padding-left: 22px; }
-ul li { margin-bottom: .4em; }
-
-iframe { width:100%; max-width: 760px; height:166px; border:none; }
-img { max-width:100%; height:auto; border-radius: 4px; }
-
-/* Homepage background */
-body.homepage {
-  background: url('homepage_image_resized.jpg') no-repeat center center fixed;
-  background-size: cover;
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+.main-content {
+    margin-left: 240px;
+    padding: 40px;
+    flex: 1;
 }

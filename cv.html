@@ -1,34 +1,64 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ewan James Knight</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Cv</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            background-color: black;
+            color: white;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: black;
+            padding-top: 20px;
+            border-right: 1px solid #444;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #333;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        .works-submenu {
+            display: none;
+            margin-left: 10px;
+        }
+        .expand-button {
+            cursor: pointer;
+            padding: 10px 20px;
+            display: block;
+            color: white;
+            background-color: black;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+        .expand-button:hover {
+            background-color: #333;
+        }
+    </style>
+
 </head>
 <body>
-  <div class="container">
+    
+    
     <div class="sidebar">
-  <div class="brand"><a href="index.html">ewan james knight</a></div>
-  <ul class="nav">
-    <li><a href="bio.html">bio</a></li>
-    <li><a href="cv.html">cv</a></li>
-    <li><a href="session.html">session work</a></li>
-    <li><a href="tuition.html">tuition</a></li>
-    <li><a href="contact.html">contact</a></li>
-    <li class="has-submenu"><a href="#">works</a>
-      <ul class="submenu">
-        <li><a href="works/gut-feelings.html">gut feelings</a></li>
-        <li><a href="works/things-fall-between.html">things fall between</a></li>
-        <li><a href="https://open.spotify.com/" target="_blank" rel="noopener">spotify</a></li>
-        <li><a href="https://soundcloud.com/brainjjus" target="_blank" rel="noopener">soundcloud</a></li>
-      </ul>
-    </li>
-  </ul>
-</div>
-
-    <main class="content">
-      <div class="sidebar">
         <a href="/index.html">Home</a>
         <a href="/bio.html">Bio</a>
         <a href="/cv.html">CV</a>
@@ -108,7 +138,6 @@
             submenu.style.display = submenu.style.display === "block" ? "none" : "block";
         }
     </script>
-    </main>
-  </div>
+
 </body>
 </html>
