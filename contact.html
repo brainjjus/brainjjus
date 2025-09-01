@@ -3,12 +3,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Contact – Ewan James Knight</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            background-color: black;
+            color: white;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: black;
+            padding-top: 20px;
+            border-right: 1px solid #444;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #333;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        .works-submenu {
+            display: none;
+            margin-left: 10px;
+        }
+        .expand-button {
+            cursor: pointer;
+            padding: 10px 20px;
+            display: block;
+            color: white;
+            background-color: black;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+        .expand-button:hover {
+            background-color: #333;
+        }
+    </style>
+
 </head>
 <body>
+    
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="cv.html">CV</a>
+        <a href="session.html">Session Work</a>
+        <a href="tuition.html">Tuition</a>
+        <a href="contact.html">Contact</a>
+        <button class="expand-button" onclick="toggleWorks()">+ Works</button>
+        <div id="works-submenu" class="works-submenu">
+            <a href="gut-feelings.html">Gut Feelings</a>
+            <a href="things-fall-between.html">Things Fall Between</a>
+            <a href="spotify.html">Spotify</a>
+            <a href="soundcloud.html">SoundCloud</a>
+        </div>
+    </div>
+
+    <div class="content">
+        
     <h1>Contact</h1>
     <p>Email: <a href="mailto:ewan0knight@gmail.com">ewan0knight@gmail.com</a></p>
     <p>Instagram: <a href="https://instagram.com/brainjjus" target="_blank">@brainjjus</a></p>
+
+    </div>
+    
+    <script>
+        function toggleWorks() {
+            var submenu = document.getElementById("works-submenu");
+            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
 </body>
 </html>
