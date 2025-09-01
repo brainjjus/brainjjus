@@ -1,36 +1,91 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
+/* Base */
+html, body { height: 100%; }
 body {
-    display: flex;
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", serif;
+  background-color: #111;
+  color: #eaeaea;
+  line-height: 1.7;
 }
-.sidebar {
-    width: 220px;
-    background-color: #f4f4f4;
-    padding: 20px;
-    height: 100vh;
-    position: fixed;
+
+/* Global link styles (no blue/underline) */
+a { color: #e6e6e6; text-decoration: none; transition: color .15s ease; }
+a:hover { color: #bfbfbf; } /* lighter shade of black/grey */
+a:focus { outline: 1px dashed #555; outline-offset: 2px; }
+
+/* Header (consistent on all pages) */
+header {
+  width: 100%;
+  background-color: #000; /* solid black */
+  border-bottom: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-.sidebar h2 {
-    font-size: 1.5em;
-    margin-bottom: 1em;
+
+header h1 {
+  font-weight: normal;
+  font-size: 1.25rem;
 }
-.sidebar ul {
-    list-style-type: none;
-    padding-left: 0;
+
+header h1 a { color: #f2f2f2; }
+header h1 a:hover { color: #cfcfcf; }
+
+/* Nav */
+nav ul { list-style: none; display: flex; gap: 22px; }
+nav li { position: relative; }
+nav li > a { padding: 4px 0; }
+
+/* Dropdown */
+nav li ul {
+  display: none;
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background-color: #000;
+  border: 1px solid #222;
+  padding: 10px 12px;
+  min-width: 200px;
+  flex-direction: column;
+  gap: 8px;
 }
-.sidebar ul li {
-    margin-bottom: 10px;
+nav li:hover ul { display: flex; }
+
+/* Layout */
+main {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
-.sidebar ul li a {
-    text-decoration: none;
-    color: #111;
+
+/* Homepage background image */
+body.homepage {
+  background: url('/homepage_image_resized.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
-.sidebar ul li a:hover {
-    text-decoration: underline;
+
+/* Home hero panel */
+.home-hero {
+  background: rgba(0,0,0,0.65);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 720px;
+  margin: 18vh auto 10vh;
+  text-align: center;
 }
-.main-content {
-    margin-left: 240px;
-    padding: 40px;
-    flex: 1;
-}
+
+/* Media elements */
+iframe { width: 100%; max-width: 640px; height: 166px; margin-top: 16px; border: none; }
+img { max-width: 100%; height: auto; border-radius: 8px; }
+
+/* Typography tweaks */
+h1 { font-size: 2rem; margin-bottom: 18px; }
+h2 { font-size: 1.4rem; margin: 24px 0 10px; }
+p, li { color: #d8d8d8; }
+ul { padding-left: 18px; }

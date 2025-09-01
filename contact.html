@@ -1,64 +1,35 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Contact</title>
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Times New Roman', serif;
-            background-color: black;
-            color: white;
-        }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 200px;
-            height: 100%;
-            background-color: black;
-            padding-top: 20px;
-            border-right: 1px solid #444;
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-        }
-        .sidebar a:hover {
-            background-color: #333;
-        }
-        .content {
-            margin-left: 200px;
-            padding: 20px;
-        }
-        .works-submenu {
-            display: none;
-            margin-left: 10px;
-        }
-        .expand-button {
-            cursor: pointer;
-            padding: 10px 20px;
-            display: block;
-            color: white;
-            background-color: black;
-            border: none;
-            width: 100%;
-            text-align: left;
-        }
-        .expand-button:hover {
-            background-color: #333;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
-    
-    <div class="sidebar">
+  <header>
+  <h1><a href="/index.html">Ewan James Knight</a></h1>
+  <nav>
+    <ul>
+      <li><a href="/bio.html">Bio</a></li>
+      <li><a href="/cv.html">CV</a></li>
+      <li><a href="/session.html">Session Work</a></li>
+      <li><a href="/tuition.html">Tuition</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li>
+        <a href="#">Works ▾</a>
+        <ul>
+          <li><a href="/works/gut-feelings.html">Gut Feelings</a></li>
+          <li><a href="/works/things-fall-between.html">Things Fall Between</a></li>
+          <li><a href="/works/spotify.html">Spotify</a></li>
+          <li><a href="/works/soundcloud.html">SoundCloud</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+  <div class="sidebar">
         <a href="/index.html">Home</a>
         <a href="/bio.html">Bio</a>
         <a href="/cv.html">CV</a>
@@ -90,6 +61,6 @@
             submenu.style.display = submenu.style.display === "block" ? "none" : "block";
         }
     </script>
-
+  </main>
 </body>
 </html>

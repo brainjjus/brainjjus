@@ -1,100 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Ewan James Knight</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Times New Roman', serif;
-      background: url('homepage_image_resized.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
-    }
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      padding-top: 20px;
-    }
-    .sidebar a {
-      display: block;
-      padding: 10px 20px;
-      color: white;
-      text-decoration: none;
-    }
-    .sidebar a:hover {
-      background-color: #333;
-    }
-    .expand-button {
-      cursor: pointer;
-      padding: 10px 20px;
-      display: block;
-      color: white;
-      background-color: black;
-      border: none;
-      width: 100%;
-      text-align: left;
-    }
-    .expand-button:hover {
-      background-color: #333;
-    }
-    .works-submenu {
-      display: none;
-      margin-left: 10px;
-    }
-    .content {
-      margin-left: 200px;
-      padding: 20px;
-    }
-    iframe {
-      margin-top: 30px;
-      width: 100%;
-      max-width: 600px;
-      height: 120px;
-    }
-  </style>
+  <link rel="stylesheet" href="/style.css">
 </head>
-<body>
-  
-    
-    <div class="sidebar">
-        <a href="/index.html">Home</a>
-        <a href="/bio.html">Bio</a>
-        <a href="/cv.html">CV</a>
-        <a href="/session.html">Session Work</a>
-        <a href="/tuition.html">Tuition</a>
-        <a href="/contact.html">Contact</a>
-        <button class="expand-button" onclick="toggleWorks()">+ Works</button>
-        <div id="works-submenu" class="works-submenu">
-            <a href="/works/gut-feelings.html">Gut Feelings</a>
-            <a href="/works/things-fall-between.html">Things Fall Between</a>
-            <a href="/works/spotify.html">Spotify</a>
-            <a href="/works/soundcloud.html">SoundCloud</a>
-        </div>
-    </div>
+<body class="homepage">
+  <header>
+  <h1><a href="/index.html">Ewan James Knight</a></h1>
+  <nav>
+    <ul>
+      <li><a href="/bio.html">Bio</a></li>
+      <li><a href="/cv.html">CV</a></li>
+      <li><a href="/session.html">Session Work</a></li>
+      <li><a href="/tuition.html">Tuition</a></li>
+      <li><a href="/contact.html">Contact</a></li>
+      <li>
+        <a href="#">Works ▾</a>
+        <ul>
+          <li><a href="/works/gut-feelings.html">Gut Feelings</a></li>
+          <li><a href="/works/things-fall-between.html">Things Fall Between</a></li>
+          <li><a href="/works/spotify.html">Spotify</a></li>
+          <li><a href="/works/soundcloud.html">SoundCloud</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</header>
 
+  <main>
+    <div class="home-hero">
+      <iframe 
+        scrolling="no" 
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/walking-through-a-forest-in-the-alps-and-sitting-by-a-mountain-stream&color=%23ffffff&inverse=false&auto_play=false&show_user=true">
+      </iframe>
     </div>
-
-  <div class="content">
-    <iframe 
-      width="100%" 
-      height="166" 
-      scrolling="no" 
-      frameborder="no" 
-      allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/walking-through-a-forest-in-the-alps-and-sitting-by-a-mountain-stream&color=%23ffffff&inverse=false&auto_play=false&show_user=true">
-    </iframe>
-  </div>
-  <script>
-    function toggleWorks() {
-      var submenu = document.getElementById("works-submenu");
-      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
-    }
-  </script>
+  </main>
 </body>
 </html>
