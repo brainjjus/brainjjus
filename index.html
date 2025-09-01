@@ -2,61 +2,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Index</title>
-    
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Times New Roman', serif;
-            background-color: black;
-            color: white;
-        }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 200px;
-            height: 100%;
-            background-color: black;
-            padding-top: 20px;
-            border-right: 1px solid #444;
-        }
-        .sidebar a {
-            display: block;
-            padding: 10px 20px;
-            color: white;
-            text-decoration: none;
-        }
-        .sidebar a:hover {
-            background-color: #333;
-        }
-        .content {
-            margin-left: 200px;
-            padding: 20px;
-        }
-        .works-submenu {
-            display: none;
-            margin-left: 10px;
-        }
-        .expand-button {
-            cursor: pointer;
-            padding: 10px 20px;
-            display: block;
-            color: white;
-            background-color: black;
-            border: none;
-            width: 100%;
-            text-align: left;
-        }
-        .expand-button:hover {
-            background-color: #333;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <title>Ewan James Knight</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Times New Roman', serif;
+      background: url('homepage_image_resized.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding-top: 20px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 10px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background-color: #333;
+    }
+    .expand-button {
+      cursor: pointer;
+      padding: 10px 20px;
+      display: block;
+      color: white;
+      background-color: black;
+      border: none;
+      width: 100%;
+      text-align: left;
+    }
+    .expand-button:hover {
+      background-color: #333;
+    }
+    .works-submenu {
+      display: none;
+      margin-left: 10px;
+    }
+    .content {
+      margin-left: 200px;
+      padding: 20px;
+    }
+    iframe {
+      margin-top: 30px;
+      width: 100%;
+      max-width: 600px;
+      height: 120px;
+    }
+  </style>
 </head>
 <body>
-    
+  
     <div class="sidebar">
         <a href="index.html">Home</a>
         <a href="bio.html">Bio</a>
@@ -66,49 +70,28 @@
         <a href="contact.html">Contact</a>
         <button class="expand-button" onclick="toggleWorks()">+ Works</button>
         <div id="works-submenu" class="works-submenu">
-            <a href="gut-feelings.html">Gut Feelings</a>
-            <a href="things-fall-between.html">Things Fall Between</a>
-            <a href="spotify.html">Spotify</a>
-            <a href="soundcloud.html">SoundCloud</a>
+            <a href="works/gut-feelings.html">Gut Feelings</a>
+            <a href="works/things-fall-between.html">Things Fall Between</a>
+            <a href="works/spotify.html">Spotify</a>
+            <a href="works/soundcloud.html">SoundCloud</a>
         </div>
     </div>
 
-    <div class="content">
-        
-    <h1>Ewan James Knight</h1>
-
-    <div class="nav">
-        <a href="bio.html">Bio</a>
-        <a href="cv.html">CV</a>
-        <a href="works/index.html">Works</a>
-        <a href="session.html">Session Work</a>
-        <a href="tuition.html">Tuition</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="soundcloud-player">
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/walking-through-a-forest-in-the-alps-and-sitting-by-a-mountain-stream&color=%23ffffff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
-        </iframe>
-    </div>
-
-    <div class="socials">
-        <a href="https://soundcloud.com/brainjjus" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Soundcloud_icon.svg" alt="SoundCloud">
-        </a>
-        <a href="https://instagram.com/brainjjus" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
-    </div>
-
-    </div>
-    
-    <script>
-        function toggleWorks() {
-            var submenu = document.getElementById("works-submenu");
-            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
-        }
-    </script>
-
+  <div class="content">
+    <iframe 
+      width="100%" 
+      height="166" 
+      scrolling="no" 
+      frameborder="no" 
+      allow="autoplay"
+      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/walking-through-a-forest-in-the-alps-and-sitting-by-a-mountain-stream&color=%23ffffff&inverse=false&auto_play=false&show_user=true">
+    </iframe>
+  </div>
+  <script>
+    function toggleWorks() {
+      var submenu = document.getElementById("works-submenu");
+      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>
