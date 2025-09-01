@@ -4,75 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Ewan James Knight</title>
-    <link rel="stylesheet" href="style.css">
     <style>
-        body, html {
+        body {
             margin: 0;
-            padding: 0;
-            height: 100%;
-            font-family: 'Times New Roman', Times, serif;
-            background: url('RNI-Films-IMG-58260E6B-830F-4258-90EB-430633AC3E88.JPG') no-repeat center center fixed;
+            font-family: 'Times New Roman', serif;
+            background: url('homepage_image_resized.jpg') no-repeat center center fixed;
             background-size: cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
             color: white;
-            text-align: center;
         }
-        .nav {
-            margin-top: 20px;
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .nav a {
+        .sidebar a {
+            display: block;
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
+            margin: 10px 0;
         }
-        .nav a:hover {
-            text-decoration: underline;
+        .content {
+            margin-left: 220px;
+            padding: 20px;
         }
-        .soundcloud-player {
-            margin: 30px 0;
-        }
-        .socials {
+        .social-links {
             margin-top: 20px;
         }
-        .socials a {
-            margin: 0 10px;
-            display: inline-block;
+        .social-links a {
+            margin-right: 10px;
         }
-        .socials img {
-            width: 32px;
-            height: 32px;
+        iframe {
+            margin-top: 30px;
+            width: 100%;
+            max-width: 600px;
+            height: 120px;
         }
     </style>
 </head>
 <body>
-    <h1>Ewan James Knight</h1>
-
-    <div class="nav">
+    <div class="sidebar">
+        <h2>Ewan James Knight</h2>
         <a href="bio.html">Bio</a>
         <a href="cv.html">CV</a>
         <a href="works/index.html">Works</a>
         <a href="session.html">Session Work</a>
         <a href="tuition.html">Tuition</a>
         <a href="contact.html">Contact</a>
+        <div class="social-links">
+            <a href="https://soundcloud.com/brainjjus" target="_blank">SoundCloud</a><br>
+            <a href="https://instagram.com/brainjjus" target="_blank">Instagram</a>
+        </div>
     </div>
-
-    <div class="soundcloud-player">
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/walking-through-a-forest-in-the-alps-and-sitting-by-a-mountain-stream&color=%23ffffff&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=false">
+    <div class="content">
+        <iframe 
+            width="100%" 
+            height="166" 
+            scrolling="no" 
+            frameborder="no" 
+            allow="autoplay"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/walking-through-a-forest-in-the-alps-and-sitting-by-a-mountain-stream&color=%23ffffff&inverse=false&auto_play=false&show_user=true">
         </iframe>
-    </div>
-
-    <div class="socials">
-        <a href="https://soundcloud.com/brainjjus" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Soundcloud_icon.svg" alt="SoundCloud">
-        </a>
-        <a href="https://instagram.com/brainjjus" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
     </div>
 </body>
 </html>
