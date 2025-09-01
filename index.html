@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>Ewan James Knight</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body class="homepage">
   <div class="container">
     <div class="sidebar">
   <div class="brand"><a href="index.html">ewan james knight</a></div>
@@ -19,49 +20,15 @@
       <ul class="submenu">
         <li><a href="works/gut-feelings.html">gut feelings</a></li>
         <li><a href="works/things-fall-between.html">things fall between</a></li>
-        <li><a href="works/spotify.html">spotify</a></li>
-        <li><a href="works/soundcloud.html">soundcloud</a></li>
+        <li><a href="https://open.spotify.com/" target="_blank" rel="noopener">spotify</a></li>
+        <li><a href="https://soundcloud.com/brainjjus" target="_blank" rel="noopener">soundcloud</a></li>
       </ul>
     </li>
   </ul>
 </div>
 
-    <main>
-      <img src="homepage_image_resized.jpg" alt="Ewan performing" class="hero-img">
-      <div class="sidebar">
-        <a href="/index.html">Home</a>
-        <a href="/bio.html">Bio</a>
-        <a href="/cv.html">CV</a>
-        <a href="/session.html">Session Work</a>
-        <a href="/tuition.html">Tuition</a>
-        <a href="/contact.html">Contact</a>
-        <button class="expand-button" onclick="toggleWorks()">+ Works</button>
-        <div id="works-submenu" class="works-submenu">
-            <a href="/works/gut-feelings.html">Gut Feelings</a>
-            <a href="/works/things-fall-between.html">Things Fall Between</a>
-            <a href="/works/spotify.html">Spotify</a>
-            <a href="/works/soundcloud.html">SoundCloud</a>
-        </div>
-    </div>
-
-    </div>
-
-  <div class="content">
-    <iframe 
-      width="100%" 
-      height="166" 
-      scrolling="no" 
-      frameborder="no" 
-      allow="autoplay"
-      src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/walking-through-a-forest-in-the-alps-and-sitting-by-a-mountain-stream&color=%23ffffff&inverse=false&auto_play=false&show_user=true">
-    </iframe>
-  </div>
-  <script>
-    function toggleWorks() {
-      var submenu = document.getElementById("works-submenu");
-      submenu.style.display = submenu.style.display === "block" ? "none" : "block";
-    }
-  </script>
+    <main class="content">
+      <!-- homepage is visual only -->
     </main>
   </div>
 </body>

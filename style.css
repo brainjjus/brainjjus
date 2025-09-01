@@ -1,42 +1,39 @@
 /* Reset */
-* { margin:0; padding:0; box-sizing:border-box; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* Base */
-html, body { height:100%; }
+html, body { height: 100%; }
 body {
   font-family: Georgia, "Times New Roman", serif;
-  background-color: #f6f6f4; /* soft off-white */
-  color: #333;               /* dark grey text */
+  background-color: #f6f6f4; /* off-white */
+  color: #333;
   line-height: 1.8;
-  font-size: 19px;           /* larger, more readable */
+  font-size: 20px;
 }
 
-/* Links (no blue/underline) */
-a { color: #4a4a4a; text-decoration:none; transition: color .15s ease; }
-a:hover { color: #222; } /* slightly darker (lighter than pure black ask interpreted as closer to black) */
-a:focus { outline: 1px dashed #aaa; outline-offset: 2px; }
+/* Links */
+a { color: #505050; text-decoration: none; transition: color .15s ease; }
+a:hover { color: #222; }
+a:focus { outline: 1px dashed #999; outline-offset: 2px; }
 
-/* Layout */
-.container { display:flex; min-height:100vh; }
+.container { display: flex; min-height: 100vh; }
 
-/* Sidebar like Hinako's */
+/* Sidebar */
 .sidebar {
   width: 220px;
   padding: 24px 18px;
-  background: transparent;  /* blends into off-white */
   position: sticky;
   top: 0;
   align-self: flex-start;
   height: 100vh;
   border-right: 1px solid #e3e3df;
+  background: transparent;
 }
 
 .brand {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: lowercase;
-  letter-spacing: .5px;
   font-size: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .nav {
@@ -46,39 +43,36 @@ a:focus { outline: 1px dashed #aaa; outline-offset: 2px; }
   color: #8a8a8a;
 }
 
-.nav li { margin: 6px 0; }
+.nav li { margin: 8px 0; }
 .nav a { color: #8a8a8a; }
 .nav a:hover { color: #5a5a5a; }
 
-/* Works submenu */
 .nav .submenu {
   display: none;
   margin-left: 12px;
   border-left: 1px solid #e3e3df;
   padding-left: 10px;
 }
-.nav .has-submenu:hover .submenu { display: block; } /* hover reveal similar to her site */
+.nav .has-submenu:hover .submenu { display: block; }
 
-/* Main content */
-main {
+/* Content */
+main.content {
   flex: 1;
-  padding: 32px 32px 64px;
+  padding: 40px 40px 64px;
   max-width: 1100px;
   margin: 0 auto;
 }
-
-main h1 { font-size: 34px; margin: 8px 0 14px; font-weight: 700; color:#2a2a2a; }
-main h2 { font-size: 24px; margin: 24px 0 12px; color:#2f2f2f; }
+main.content h1 { font-size: 34px; margin: 8px 0 16px; font-weight: 700; color:#2a2a2a; }
+main.content h2 { font-size: 24px; margin: 24px 0 12px; color:#2f2f2f; }
 p, li { color: #474747; }
+ul { padding-left: 22px; }
+ul li { margin-bottom: .4em; }
 
-/* Media */
 iframe { width:100%; max-width: 760px; height:166px; border:none; }
 img { max-width:100%; height:auto; border-radius: 4px; }
 
-/* Homepage banner image on main content top */
-.hero-img {
-  width: 100%;
-  border: 1px solid #e3e3df;
-  border-radius: 6px;
-  margin: 12px 0 20px;
+/* Homepage background */
+body.homepage {
+  background: url('homepage_image_resized.jpg') no-repeat center center fixed;
+  background-size: cover;
 }
