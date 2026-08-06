@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cv</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', serif;
+            background-color: black;
+            color: white;
+        }
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: black;
+            padding-top: 20px;
+            border-right: 1px solid #444;
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            background-color: #333;
+        }
+        .content {
+            margin-left: 200px;
+            padding: 20px;
+        }
+        .works-submenu {
+            display: none;
+            margin-left: 10px;
+        }
+        .expand-button {
+            cursor: pointer;
+            padding: 10px 20px;
+            display: block;
+            color: white;
+            background-color: black;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+        .expand-button:hover {
+            background-color: #333;
+        }
+    </style>
+
+</head>
+<body>
+    
+    
+    <div class="sidebar">
+        <a href="/index.html">Home</a>
+        <a href="/bio.html">Bio</a>
+        <a href="/cv.html">CV</a>
+        <a href="/session.html">Session Work</a>
+        <a href="/contact.html">Contact</a>
+        <button class="expand-button" onclick="toggleWorks()">+ Works</button>
+        <div id="works-submenu" class="works-submenu">
+            <a href="/works/gut-feelings.html">Gut Feelings</a>
+            <a href="/works/things-fall-between.html">Things Fall Between</a>
+            <a href="/works/spotify.html">Spotify</a>
+            <a href="/works/soundcloud.html">SoundCloud</a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="content">
+        
+    <h1>CV</h1>
+    <h2>Performances</h2>
+    <ul>
+        <li>2026 – Grove, Nottingham (Cleaver Blue)</li>
+        <li>2026 – Halogen Halo, Sheffield (Cleaver Blue)</li>
+        <li>2026 – Walkley Fest, Sheffield (Mat Hook)</li>
+        <li>2026 – River Flows Until Tomorrow, Gut Level, Sheffield (with Nam Joo Huh)</li>
+        <li>2025 – PARSE Biennial, Gothenburg (Gut Feelings with Nam Joo Huh)</li>
+        <li>2025 – BIRCH Studios and Gallery, Liverpool (Gut Feelings with Nam Joo Huh)</li>
+        <li>2025 – Eastside Projects, Birmingham (Gut Feelings with Nam Joo Huh)</li>
+        <li>2025 – Riverside Studios, London (Gut Feelings with Nam Joo Huh)</li>
+        <li>2025 – Shakespeare's, Sheffield (Things Fall Between Solo Show)</li>
+        <li>2025 – Hagglers Corner, Sheffield (EMOM Solo Performance)</li>
+        <li>2025 – Yellow Arch Studios, Sheffield (With Steel City Groovers + Solo DJ Set)</li>
+        <li>2025 – Sidney and Matilda, Sheffield (Mat Hook)</li>
+        <li>2025 – Hangar 94, Sheffield (Mat Hook)</li>
+        <li>2025 – Cutlers Hall, Sheffield (Steel City Groovers)</li>
+        <li>2024 – Herdfest, Sheffield (Selina Lee)</li>
+        <li>2024 – Nottingham House, Sheffield (Selina Lee)</li>
+        <li>2024 – Dore and Totley Festival, Sheffield (Mat Hook)</li>
+        <li>2024 – Hangar 94, Sheffield (Matt Hook)</li>
+        <li>2024 – Bamfest, Sheffield (Selina Lee)</li>
+        <li>2024 – Tramlines Festival, Sheffield (Selina Lee)</li>
+        <li>2024 – Pitcher and Piano, Sheffield (Steel City Groovers)</li>
+        <li>2024 – Sheffield City Hall, Sheffield (Steel City Groovers)</li>
+        <li>2024 – Cutlers Hall, Sheffield (Steel City Groovers)</li>
+    </ul>
+
+    <h2>Exhibitions</h2>
+    <ul>
+        <li>2025 – Gut Feelings, BIRCH Studios and Gallery, Liverpool. With Nam Joo Huh, Ryu Kim, and Lara Jennings. Part of the Liverpool Independents Biennial.</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+        <li>2025 – Things Fall Between – Solo production</li>
+        <li>2025 – Gut Feelings – Individual Hotpot (with Nam Joo Huh)</li>
+        <li>2025 – you might never be in the same room you are listening to this again – Solo EP</li>
+        <li>2025 – After a Bite – In collaboration with SIM</li>
+        <li>2024 – I Dancem Refusant – Game sound design (Jack Readman)</li>
+        <li>2021 – Antifolk Hero – Colours, Drowning Stamp, and Late Escapes – Co-writing and guitar</li>
+    </ul>
+
+    <h2>Collaborations</h2>
+    <ul>
+        <li>2026–Present – Cleaver Blue (Bassist)</li>
+        <li>2025–Present – Individual Hotpot (with Nam Joo Huh)</li>
+        <li>2022–Present – Selina Lee (live backing band)</li>
+        <li>2022–Present – Mat Hook (live backing band)</li>
+        <li>2022–Present – Steel City Groovers (live backing band)</li>
+        <li>2018–2022 – Antifolk Hero (with Nathaniel Smith, James Ridgeway, Dan Oram) — venues included Leadmill, Sidney & Matilda, The Washington</li>
+    </ul>
+
+    <h2>Awards</h2>
+    <ul>
+        <li>Recipient – Earthsonic Foundation Futures Award</li>
+    </ul>
+
+    </div>
+    
+    <script>
+        function toggleWorks() {
+            var submenu = document.getElementById("works-submenu");
+            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

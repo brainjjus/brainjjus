@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bio | Ewan James Knight</title>
+    
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background-color: #111;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #000;
+            padding: 20px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .sidebar a {
+            color: #f0f0f0;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+        .dropdown-content {
+            display: none;
+            flex-direction: column;
+            padding-left: 10px;
+        }
+        .dropdown:hover .dropdown-content {
+            display: flex;
+        }
+        .bio-wrapper {
+            margin-left: 220px;
+            padding: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .bio-text {
+            flex: 1;
+            padding-right: 20px;
+            max-width: 55%;
+        }
+        .bio-image {
+            flex: 1;
+            max-width: 40%;
+        }
+        .bio-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="bio.html">Bio</a>
+        <a href="cv.html">CV</a>
+        <div class="dropdown">
+            <a href="#">Works +</a>
+            <div class="dropdown-content">
+                <a href="works/gut-feelings.html">Gut Feelings</a>
+                <a href="works/things-fall-between.html">Things Fall Between</a>
+                <a href="https://open.spotify.com/artist/6gXUsj05uNhFBePL3R5CPS">Spotify</a>
+                <a href="https://soundcloud.com/brainjjus">SoundCloud</a>
+            </div>
+        </div>
+        <a href="session.html">Session Work</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    
+<div class="bio-wrapper">
+    <div class="bio-text">
+        <p>
+            I’m a musician, composer, and sound designer based in Sheffield. My practice is pretty varied, mostly moving between ambient music, experimental performance, and sound art. I release my solo musical projects under the moniker brainjjus, while everything else—from interactive media and experimental narrative games to session work—goes under my own name.
+        </p>
+        <p>
+            A lot of my focus is on how sound functions in different spaces. Recently, this included premiering <i>Things Fall Between</i>, a six-movement solo performance, and co-creating <i>Gut Feelings</i> as part of individual Hotpot, a collaborative duo with Korean researcher-producer Nam Joo Huh. <i>Gut Feelings</i> is an exploration of "sonic shame" that we've taken across the UK and Europe as both a performance lecture and an immersive exhibition.
+        </p>
+        <p>
+            Alongside my own productions, which rely heavily on field recordings and synthesis, I’m a classically trained guitarist and multi-instrumentalist. I play bass for the Sheffield band Cleaver Blue and regularly work as a session and dep musician for artists like Selina Lee and Mat Hook.
+        </p>
+        <p>
+            In my day to day life, I also work as the music technician for Doncaster Council, where I handle all sorts, mostly repairing broken things!
+        </p>
+    </div>
+    <div class="bio-image">
+        <img src="bio_image.jpg" alt="Ewan performing live">
+    </div>
+</div>
+
+</body>
+</html>
