@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bio — Ewan James Knight</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="wordmark" href="/index.html">Ewan James Knight<span>brainjjus</span></a>
+  <nav class="site-nav" id="site-nav">
+    <a href="/bio.html" aria-current="page">Bio</a>
+    <a href="/cv.html">CV</a>
+    <a href="/works/index.html">Works</a>
+    <a href="/session.html">Session</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">MENU</button>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <span class="eyebrow">About</span>
+    <h1>Bio</h1>
+  </div>
+
+  <div class="bio-layout">
+    <div class="bio-portrait">
+      <img src="bio_image.jpg" alt="Ewan performing live">
+      <div class="ring" aria-hidden="true"></div>
+    </div>
+    <div class="bio-text">
+      <p>
+        I'm a musician, composer, and sound designer based in Sheffield. My practice is pretty varied, mostly moving between ambient music, experimental performance, and sound art. I release my solo musical projects under the moniker brainjjus, while everything else — from interactive media and experimental narrative games to session work — goes under my own name.
+      </p>
+      <p>
+        A lot of my focus is on how sound functions in different spaces. Recently, this included premiering <i>Things Fall Between</i>, a six-movement solo performance, and co-creating <i>Gut Feelings</i> as part of individual Hotpot, a collaborative duo with Korean researcher-producer Nam Joo Huh. <i>Gut Feelings</i> is an exploration of "sonic shame" that we've taken across the UK and Europe as both a performance lecture and an immersive exhibition.
+      </p>
+      <p>
+        Alongside my own productions, which rely heavily on field recordings and synthesis, I'm a classically trained guitarist and multi-instrumentalist. I play bass for the Sheffield band Cleaver Blue and regularly work as a session and dep musician for artists like Selina Lee and Mat Hook.
+      </p>
+      <p>
+        In my day to day life, I also work as the music technician for Doncaster Council, where I handle all sorts, mostly repairing broken things!
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Ewan James Knight</span>
+  <span><a href="mailto:ewan0knight@gmail.com">Email</a><span class="sep">·</span><a href="https://instagram.com/brainjjus" target="_blank">Instagram</a></span>
+</footer>
+
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', function(){
+    document.getElementById('site-nav').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

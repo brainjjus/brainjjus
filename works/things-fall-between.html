@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Things Fall Between — Ewan James Knight</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="wordmark" href="/index.html">Ewan James Knight<span>brainjjus</span></a>
+  <nav class="site-nav" id="site-nav">
+    <a href="/bio.html">Bio</a>
+    <a href="/cv.html">CV</a>
+    <a href="/works/index.html" aria-current="page">Works</a>
+    <a href="/session.html">Session</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">MENU</button>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <span class="eyebrow">2025 · Solo</span>
+  </div>
+
+  <div class="work-hero">
+    <div class="frame">
+      <img src="../things_fall_between_poster.png" alt="Things Fall Between poster">
+    </div>
+    <div>
+      <h1 style="font-size:clamp(1.8rem,4vw,2.6rem); text-transform:uppercase;">Things Fall Between</h1>
+      <p class="standfirst">A six-movement immersive ambient performance for guitar, synths, and electronics, built around the sensation of falling as psychological rupture.</p>
+    </div>
+  </div>
+
+  <div class="section prose" style="border-top:none; padding-left:0; padding-right:0;">
+    <p><em>Things Fall Between</em> is an immersive, long-form ambient performance by Ewan James Knight, originally developed as his MA final project. The piece is structured in six movements, performed with guitar, effects, synthesizers, and electronics.</p>
+    <p>Premiered in June 2025, the work explores the sensation of falling — as a metaphor for psychological rupture — and uses layered textures, field recordings, and spatial audio to create an enveloping sound world. A studio version is set for release as a full album later in 2025.</p>
+  </div>
+
+  <div class="section" style="padding-left:0; padding-right:0;">
+    <div class="player-frame">
+      <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/brainjjus/sets/things-fall-between-live-performance-version&color=%23ffffff&auto_play=false&show_comments=false">
+      </iframe>
+    </div>
+    <p style="margin-top:16px;"><a href="https://youtu.be/2QHkLvJuYXg" target="_blank">Watch the live video performance →</a></p>
+  </div>
+
+  <!--
+    GALLERY — add more photos any time.
+    Copy one <figure> block and swap the src/alt to add a new photo.
+    Each dashed "Add a photo" tile is just a placeholder — delete it
+    once you've added a real image in its place.
+  -->
+  <div class="section" style="padding-left:0; padding-right:0;">
+    <div class="section-head"><h2>Gallery</h2></div>
+    <div class="gallery-grid">
+      <figure><img src="../things_fall_between_poster.png" alt="Things Fall Between poster"></figure>
+      <figure class="add-slot">+ Add a photo</figure>
+      <figure class="add-slot">+ Add a photo</figure>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Ewan James Knight</span>
+  <span><a href="mailto:ewan0knight@gmail.com">Email</a><span class="sep">·</span><a href="https://instagram.com/brainjjus" target="_blank">Instagram</a></span>
+</footer>
+
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', function(){
+    document.getElementById('site-nav').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

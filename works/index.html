@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Works — Ewan James Knight</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="wordmark" href="/index.html">Ewan James Knight<span>brainjjus</span></a>
+  <nav class="site-nav" id="site-nav">
+    <a href="/bio.html">Bio</a>
+    <a href="/cv.html">CV</a>
+    <a href="/works/index.html" aria-current="page">Works</a>
+    <a href="/session.html">Session</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">MENU</button>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <span class="eyebrow">Selected works</span>
+    <h1>Works</h1>
+    <p class="lede">Performances, releases, and collaborative projects. Each page below has more detail, documentation, and photos — with more being added as new work develops.</p>
+  </div>
+
+  <!--
+    TO ADD A NEW WORK LATER:
+    1. Duplicate one of the <a class="work-card"> blocks below.
+    2. Point the href at a new file, e.g. /works/new-project.html, and create that file
+       (things-fall-between.html is a good template to copy).
+    3. Swap the image, eyebrow (year · context), title, and one-line summary.
+  -->
+  <div class="work-grid">
+
+    <a class="work-card" href="/works/gut-feelings.html">
+      <div class="thumb"><img src="../performance_collab.jpg" alt="Gut Feelings performance"></div>
+      <div class="body">
+        <span class="eyebrow">2025 · Individual Hotpot</span>
+        <h3>Gut Feelings</h3>
+        <p>A performance-lecture and installation exploring sonic shame and involuntary bodily sound, made with Nam Joo Huh. Shown across the UK and Europe, including the Liverpool Independents Biennial.</p>
+        <div class="go">Read more →</div>
+      </div>
+    </a>
+
+    <a class="work-card" href="/works/things-fall-between.html">
+      <div class="thumb"><img src="../things_fall_between_poster.png" alt="Things Fall Between poster"></div>
+      <div class="body">
+        <span class="eyebrow">2025 · Solo</span>
+        <h3>Things Fall Between</h3>
+        <p>A six-movement immersive ambient performance for guitar, synths, and electronics, built around the metaphor of falling as psychological rupture.</p>
+        <div class="go">Read more →</div>
+      </div>
+    </a>
+
+    <!-- Empty slot ready for the next project — delete this block once a real one replaces it -->
+    <div class="work-card" style="opacity:.55;">
+      <div class="thumb placeholder">More coming soon</div>
+      <div class="body">
+        <span class="eyebrow">Next</span>
+        <h3>New Work</h3>
+        <p>Space reserved for the next release or performance write-up.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section" style="padding-left:0;padding-right:0;">
+    <div class="section-head"><h2>Listen</h2></div>
+    <div class="link-tiles">
+      <a class="link-tile" href="/works/spotify.html" target="_blank">Spotify ↗</a>
+      <a class="link-tile" href="/works/soundcloud.html" target="_blank">SoundCloud ↗</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Ewan James Knight</span>
+  <span><a href="mailto:ewan0knight@gmail.com">Email</a><span class="sep">·</span><a href="https://instagram.com/brainjjus" target="_blank">Instagram</a></span>
+</footer>
+
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', function(){
+    document.getElementById('site-nav').classList.toggle('open');
+  });
+</script>
+</body>
+</html>

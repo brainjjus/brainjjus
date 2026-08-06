@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Ewan James Knight</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="wordmark" href="/index.html">Ewan James Knight<span>brainjjus</span></a>
+  <nav class="site-nav" id="site-nav">
+    <a href="/bio.html">Bio</a>
+    <a href="/cv.html">CV</a>
+    <a href="/works/index.html">Works</a>
+    <a href="/session.html">Session</a>
+    <a href="/contact.html" aria-current="page">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">MENU</button>
+</header>
+
+<main class="page">
+  <div class="page-head">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Contact</h1>
+  </div>
+  <ul class="contact-list">
+    <li>Email — <a href="mailto:ewan0knight@gmail.com">ewan0knight@gmail.com</a></li>
+    <li>Instagram — <a href="https://instagram.com/brainjjus" target="_blank">@brainjjus</a></li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Ewan James Knight</span>
+  <span><a href="mailto:ewan0knight@gmail.com">Email</a><span class="sep">·</span><a href="https://instagram.com/brainjjus" target="_blank">Instagram</a></span>
+</footer>
+
+<script>
+  document.getElementById('nav-toggle').addEventListener('click', function(){
+    document.getElementById('site-nav').classList.toggle('open');
+  });
+</script>
+</body>
+</html>
